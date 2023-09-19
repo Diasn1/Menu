@@ -55,6 +55,7 @@ def pages(page):
                         if dish1 == i:
                             order_price.append(first[dish1])
                             order_name.append(dish1)
+                            print(order_price)
                             menu = int(input("Выберите страницу меню: (1-5, 6-показать чек)"))
                             pages(menu)
             case 2:
@@ -69,6 +70,7 @@ def pages(page):
                         if dish2 == i:
                             order_price.append(second[dish2])
                             order_name.append(dish2)
+                            print(order_price)
                             menu = int(input("Выберите страницу меню: (1-5, 6-показать чек)"))
                             pages(menu)
             case 3:
@@ -79,10 +81,11 @@ def pages(page):
                     pages(menu)
                 elif y_n =="y":
                     dish3 = input("Выберите блюдо из списка: ")
-                    for i in second:
+                    for i in sweets:
                         if dish3 == i:
                             order_price.append(sweets[dish3])
                             order_name.append(dish3)
+                            print(order_price)
                             menu = int(input("Выберите страницу меню: (1-5, 6-показать чек)"))
                             pages(menu)
             case 4:
@@ -93,10 +96,11 @@ def pages(page):
                     pages(menu)
                 elif y_n =="y":
                     dish4 = input("Выберите блюдо из списка: ")
-                    for i in second:
+                    for i in hot_bar:
                         if dish4 == i:
                             order_price.append(hot_bar[dish4])
                             order_name.append(dish4)
+                            print(order_price)
                             menu = int(input("Выберите страницу меню: (1-5, 6-показать чек)"))
                             pages(menu)
             case 5:
@@ -107,10 +111,11 @@ def pages(page):
                     pages(menu)
                 elif y_n =="y":
                     dish5 = input("Выберите блюдо из списка: ")
-                    for i in second:
+                    for i in bar:
                         if dish5 == i:
                             order_price.append(bar[dish5])
                             order_name.append(dish5)
+                            print(order_price)
                             menu = int(input("Выберите страницу меню: (1-5, 6-показать чек)"))
                             pages(menu)
             case 6:            
